@@ -33,7 +33,7 @@ class BtcUsdTickerVM {
         
         self.hasInternetConnection = tickerData
             .flatMapLatest { ReachabilityService.shared.reachability }
-            .map { $0.reachable }
+            .map { $0 }
             .asDriver(onErrorJustReturn: true)
         
         self.low = ticker.map { ticker -> String? in

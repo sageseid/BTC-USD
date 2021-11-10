@@ -12,13 +12,13 @@ import RxSwift
 class BtcUsdWebService {
     static let shared = BtcUsdWebService()
     private var handler: WebSocketHandler
-    private let reachabilityService: ReachabilityServiceType
+    private let reachabilityService: ReachabilityService
     
     typealias TickerResult = Result<Ticker, Error>
     typealias OrderBookResult = Result<OrderBook, Error>
     
     init(listener: WebSocketHandler = WebSocketHandler(),
-         reachabilityService: ReachabilityServiceType = ReachabilityService.shared) {
+         reachabilityService: ReachabilityService = ReachabilityService.shared) {
         self.handler = listener
         self.reachabilityService = reachabilityService
     }
@@ -62,7 +62,7 @@ class BtcUsdWebService {
             .retryWhen({ (errorObservable: Observable<Error>) -> Observable<Void> in
                 errorObservable.flatMap { [weak self] _ -> Observable<()> in
                     return reachabilityService.reachability
-                        .filter { $0.reachable }
+                        .filter { $0 }
                         .map { _ in () }
                 }
             })

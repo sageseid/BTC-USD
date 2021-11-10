@@ -24,7 +24,6 @@
 		4E9F101D27397787007E1E23 /* BtcUsdWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F101727397786007E1E23 /* BtcUsdWebService.swift */; };
 		4E9F101E27397787007E1E23 /* WebSocketResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F101827397786007E1E23 /* WebSocketResponseDecoder.swift */; };
 		4E9F1028273977E4007E1E23 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1026273977E4007E1E23 /* ReachabilityService.swift */; };
-		4E9F1029273977E4007E1E23 /* ReachabilityServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1027273977E4007E1E23 /* ReachabilityServiceType.swift */; };
 		4E9F102B27397811007E1E23 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F102A27397811007E1E23 /* Reachability.swift */; };
 		4E9F103827397827007E1E23 /* ValuesFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F103027397826007E1E23 /* ValuesFormatter.swift */; };
 		4E9F103E27397855007E1E23 /* BtcUsdOrderBookVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F103C27397854007E1E23 /* BtcUsdOrderBookVM.swift */; };
@@ -85,7 +84,6 @@
 		4E9F101727397786007E1E23 /* BtcUsdWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcUsdWebService.swift; sourceTree = "<group>"; };
 		4E9F101827397786007E1E23 /* WebSocketResponseDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketResponseDecoder.swift; sourceTree = "<group>"; };
 		4E9F1026273977E4007E1E23 /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
-		4E9F1027273977E4007E1E23 /* ReachabilityServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityServiceType.swift; sourceTree = "<group>"; };
 		4E9F102A27397811007E1E23 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		4E9F103027397826007E1E23 /* ValuesFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValuesFormatter.swift; sourceTree = "<group>"; };
 		4E9F103C27397854007E1E23 /* BtcUsdOrderBookVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcUsdOrderBookVM.swift; sourceTree = "<group>"; };
@@ -255,7 +253,6 @@
 			isa = PBXGroup;
 			children = (
 				4E9F1026273977E4007E1E23 /* ReachabilityService.swift */,
-				4E9F1027273977E4007E1E23 /* ReachabilityServiceType.swift */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -578,7 +575,6 @@
 				4E9F104A273A37FD007E1E23 /* Constants.swift in Sources */,
 				4E9F1028273977E4007E1E23 /* ReachabilityService.swift in Sources */,
 				4E9F0FD027397501007E1E23 /* SceneDelegate.swift in Sources */,
-				4E9F1029273977E4007E1E23 /* ReachabilityServiceType.swift in Sources */,
 				4E9F1053273ACFA0007E1E23 /* OrderBookSnapshot.swift in Sources */,
 				4E9F102B27397811007E1E23 /* Reachability.swift in Sources */,
 				4E9F1051273ACF76007E1E23 /* OrderBookResponse.swift in Sources */,
