@@ -1,8 +1,8 @@
 //
-//  OrderBookSubscription.swift
+//  OrderBookResponse.swift
 //  BTC-USD
 //
-//  Created by Noel Obaseki on 09/11/2021.
+//  Created by Noel Obaseki on 06/11/2021.
 //
 
 import Foundation

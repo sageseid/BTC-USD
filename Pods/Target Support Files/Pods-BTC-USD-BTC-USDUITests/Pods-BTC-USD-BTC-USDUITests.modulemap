@@ -1,0 +1,6 @@
+framework module Pods_BTC_USD_BTC_USDUITests {
+  umbrella header "Pods-BTC-USD-BTC-USDUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

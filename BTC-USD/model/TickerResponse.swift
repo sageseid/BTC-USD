@@ -1,5 +1,5 @@
 //
-//  TickerSubscription.swift
+//  TickerResponse.swift
 //  BTC-USD
 //
 //  Created by Noel Obaseki on 06/11/2021.

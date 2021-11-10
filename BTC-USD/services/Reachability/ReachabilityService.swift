@@ -1,9 +1,8 @@
 //
 //  ReachabilityService.swift
-//  BTCTracker
+//  BTC-USD
 //
-//  Created by Florian Preknya on 9/5/19.
-//  Copyright © 2019 Florian Preknya. All rights reserved.
+//  Created by Noel Obaseki on 07/11/2021.
 //
 
 import Foundation
@@ -34,14 +33,13 @@ class ReachabilityService: ReachabilityServiceType {
             let backgroundQueue = DispatchQueue(label: "reachability.wificheck", attributes: [])
             
             reachabilityRef.whenReachable = { reachability in
-                print("Reachability is ON!")
                 backgroundQueue.async {
                     reachabilitySubject?.on(.next(.reachable(viaWiFi: reachabilityRef.isReachableViaWiFi)))
                 }
             }
             
             reachabilityRef.whenUnreachable = { reachability in
-                print("Reachability is OFF!")
+
                 backgroundQueue.async {
                     reachabilitySubject?.on(.next(.unreachable))
                 }

@@ -3,19 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15120CE86249287F602BFD2E /* Pods_BTC_USD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23C4874E1F2B1F268C3E666 /* Pods_BTC_USD.framework */; };
+		330565C22DAEE3C1160D9BA4 /* Pods_BTC_USDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7503D5F7625652DC3539990 /* Pods_BTC_USDTests.framework */; };
 		4E9F0FCE27397501007E1E23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F0FCD27397501007E1E23 /* AppDelegate.swift */; };
 		4E9F0FD027397501007E1E23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F0FCF27397501007E1E23 /* SceneDelegate.swift */; };
-		4E9F0FD227397501007E1E23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F0FD127397501007E1E23 /* ViewController.swift */; };
 		4E9F0FD527397501007E1E23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F0FD327397501007E1E23 /* Main.storyboard */; };
 		4E9F0FD727397504007E1E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F0FD627397504007E1E23 /* Assets.xcassets */; };
 		4E9F0FDA27397504007E1E23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F0FD827397504007E1E23 /* LaunchScreen.storyboard */; };
 		4E9F0FE527397504007E1E23 /* BTC_USDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F0FE427397504007E1E23 /* BTC_USDTests.swift */; };
 		4E9F0FEF27397504007E1E23 /* BTC_USDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F0FEE27397504007E1E23 /* BTC_USDUITests.swift */; };
 		4E9F0FF127397504007E1E23 /* BTC_USDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F0FF027397504007E1E23 /* BTC_USDUITestsLaunchTests.swift */; };
+		4E9F1005273976CB007E1E23 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1002273976CA007E1E23 /* Ticker.swift */; };
+		4E9F1007273976CB007E1E23 /* OrderBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1004273976CB007E1E23 /* OrderBook.swift */; };
+		4E9F101B27397787007E1E23 /* WebSocketHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F101527397785007E1E23 /* WebSocketHandler.swift */; };
+		4E9F101C27397787007E1E23 /* WebSocketRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F101627397786007E1E23 /* WebSocketRequests.swift */; };
+		4E9F101D27397787007E1E23 /* BtcUsdWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F101727397786007E1E23 /* BtcUsdWebService.swift */; };
+		4E9F101E27397787007E1E23 /* WebSocketResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F101827397786007E1E23 /* WebSocketResponseDecoder.swift */; };
+		4E9F1028273977E4007E1E23 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1026273977E4007E1E23 /* ReachabilityService.swift */; };
+		4E9F1029273977E4007E1E23 /* ReachabilityServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1027273977E4007E1E23 /* ReachabilityServiceType.swift */; };
+		4E9F102B27397811007E1E23 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F102A27397811007E1E23 /* Reachability.swift */; };
+		4E9F103827397827007E1E23 /* ValuesFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F103027397826007E1E23 /* ValuesFormatter.swift */; };
+		4E9F103E27397855007E1E23 /* BtcUsdOrderBookVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F103C27397854007E1E23 /* BtcUsdOrderBookVM.swift */; };
+		4E9F103F27397855007E1E23 /* BtcUsdTickerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F103D27397855007E1E23 /* BtcUsdTickerVM.swift */; };
+		4E9F1042273978C3007E1E23 /* OrderBookHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F1040273978C2007E1E23 /* OrderBookHeaderView.xib */; };
+		4E9F1043273978C3007E1E23 /* OrderBookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F1041273978C2007E1E23 /* OrderBookTableViewCell.xib */; };
+		4E9F1045273978D5007E1E23 /* OrderBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1044273978D5007E1E23 /* OrderBookTableViewCell.swift */; };
+		4E9F104727397909007E1E23 /* BtcUsdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F104627397909007E1E23 /* BtcUsdVC.swift */; };
+		4E9F104A273A37FD007E1E23 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1049273A37FD007E1E23 /* Constants.swift */; };
+		4E9F104F273ACEBB007E1E23 /* TickerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F104E273ACEBB007E1E23 /* TickerResponse.swift */; };
+		4E9F1051273ACF76007E1E23 /* OrderBookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1050273ACF76007E1E23 /* OrderBookResponse.swift */; };
+		4E9F1053273ACFA0007E1E23 /* OrderBookSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1052273ACFA0007E1E23 /* OrderBookSnapshot.swift */; };
+		4E9F1055273AE30F007E1E23 /* TickerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1054273AE30F007E1E23 /* TickerRequest.swift */; };
+		4E9F1057273AE602007E1E23 /* OrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1056273AE602007E1E23 /* OrderRequest.swift */; };
+		BE11AC3B75F29B4DF216A538 /* Pods_BTC_USD_BTC_USDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153129BEC31E7F343C7AD57A /* Pods_BTC_USD_BTC_USDUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +60,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05E93EF5FA17617E6E1C34D2 /* Pods-BTC-USDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC-USDTests.debug.xcconfig"; path = "Target Support Files/Pods-BTC-USDTests/Pods-BTC-USDTests.debug.xcconfig"; sourceTree = "<group>"; };
+		09AB417C4EEEA6FE352912DC /* Pods-BTC-USD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC-USD.debug.xcconfig"; path = "Target Support Files/Pods-BTC-USD/Pods-BTC-USD.debug.xcconfig"; sourceTree = "<group>"; };
+		0EAA2FF274ED0F01672DD6F6 /* Pods-BTC-USD-BTC-USDUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC-USD-BTC-USDUITests.release.xcconfig"; path = "Target Support Files/Pods-BTC-USD-BTC-USDUITests/Pods-BTC-USD-BTC-USDUITests.release.xcconfig"; sourceTree = "<group>"; };
+		153129BEC31E7F343C7AD57A /* Pods_BTC_USD_BTC_USDUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTC_USD_BTC_USDUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37D9DD6BD04AD8A3605808BA /* Pods-BTC-USD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC-USD.release.xcconfig"; path = "Target Support Files/Pods-BTC-USD/Pods-BTC-USD.release.xcconfig"; sourceTree = "<group>"; };
+		4580B7A94902E818079344F3 /* Pods-BTC-USDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC-USDTests.release.xcconfig"; path = "Target Support Files/Pods-BTC-USDTests/Pods-BTC-USDTests.release.xcconfig"; sourceTree = "<group>"; };
 		4E9F0FCA27397501007E1E23 /* BTC-USD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BTC-USD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9F0FCD27397501007E1E23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E9F0FCF27397501007E1E23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4E9F0FD127397501007E1E23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4E9F0FD427397501007E1E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E9F0FD627397504007E1E23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E9F0FD927397504007E1E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +78,31 @@
 		4E9F0FEA27397504007E1E23 /* BTC-USDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BTC-USDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9F0FEE27397504007E1E23 /* BTC_USDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTC_USDUITests.swift; sourceTree = "<group>"; };
 		4E9F0FF027397504007E1E23 /* BTC_USDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTC_USDUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4E9F1002273976CA007E1E23 /* Ticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		4E9F1004273976CB007E1E23 /* OrderBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBook.swift; sourceTree = "<group>"; };
+		4E9F101527397785007E1E23 /* WebSocketHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketHandler.swift; sourceTree = "<group>"; };
+		4E9F101627397786007E1E23 /* WebSocketRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketRequests.swift; sourceTree = "<group>"; };
+		4E9F101727397786007E1E23 /* BtcUsdWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcUsdWebService.swift; sourceTree = "<group>"; };
+		4E9F101827397786007E1E23 /* WebSocketResponseDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketResponseDecoder.swift; sourceTree = "<group>"; };
+		4E9F1026273977E4007E1E23 /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
+		4E9F1027273977E4007E1E23 /* ReachabilityServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityServiceType.swift; sourceTree = "<group>"; };
+		4E9F102A27397811007E1E23 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4E9F103027397826007E1E23 /* ValuesFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValuesFormatter.swift; sourceTree = "<group>"; };
+		4E9F103C27397854007E1E23 /* BtcUsdOrderBookVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcUsdOrderBookVM.swift; sourceTree = "<group>"; };
+		4E9F103D27397855007E1E23 /* BtcUsdTickerVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcUsdTickerVM.swift; sourceTree = "<group>"; };
+		4E9F1040273978C2007E1E23 /* OrderBookHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderBookHeaderView.xib; sourceTree = "<group>"; };
+		4E9F1041273978C2007E1E23 /* OrderBookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderBookTableViewCell.xib; sourceTree = "<group>"; };
+		4E9F1044273978D5007E1E23 /* OrderBookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBookTableViewCell.swift; sourceTree = "<group>"; };
+		4E9F104627397909007E1E23 /* BtcUsdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcUsdVC.swift; sourceTree = "<group>"; };
+		4E9F1049273A37FD007E1E23 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4E9F104E273ACEBB007E1E23 /* TickerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerResponse.swift; sourceTree = "<group>"; };
+		4E9F1050273ACF76007E1E23 /* OrderBookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookResponse.swift; sourceTree = "<group>"; };
+		4E9F1052273ACFA0007E1E23 /* OrderBookSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookSnapshot.swift; sourceTree = "<group>"; };
+		4E9F1054273AE30F007E1E23 /* TickerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRequest.swift; sourceTree = "<group>"; };
+		4E9F1056273AE602007E1E23 /* OrderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRequest.swift; sourceTree = "<group>"; };
+		621420F511DF3210DED003CA /* Pods-BTC-USD-BTC-USDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC-USD-BTC-USDUITests.debug.xcconfig"; path = "Target Support Files/Pods-BTC-USD-BTC-USDUITests/Pods-BTC-USD-BTC-USDUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A23C4874E1F2B1F268C3E666 /* Pods_BTC_USD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTC_USD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7503D5F7625652DC3539990 /* Pods_BTC_USDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTC_USDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15120CE86249287F602BFD2E /* Pods_BTC_USD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330565C22DAEE3C1160D9BA4 /* Pods_BTC_USDTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE11AC3B75F29B4DF216A538 /* Pods_BTC_USD_BTC_USDUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +140,8 @@
 				4E9F0FE327397504007E1E23 /* BTC-USDTests */,
 				4E9F0FED27397504007E1E23 /* BTC-USDUITests */,
 				4E9F0FCB27397501007E1E23 /* Products */,
+				60E54FF61A334C18F53CD1D9 /* Pods */,
+				C9F680ADA49DFBA05B9D86CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +158,15 @@
 		4E9F0FCC27397501007E1E23 /* BTC-USD */ = {
 			isa = PBXGroup;
 			children = (
+				4E9F104827397A08007E1E23 /* user interface */,
+				4E9F100127397686007E1E23 /* utils */,
+				4E9F10002739767F007E1E23 /* model */,
+				4E9F0FFF27397671007E1E23 /* views */,
+				4E9F0FFE27397667007E1E23 /* viewModels */,
+				4E9F0FFD2739765C007E1E23 /* services */,
 				4E9F0FCD27397501007E1E23 /* AppDelegate.swift */,
 				4E9F0FCF27397501007E1E23 /* SceneDelegate.swift */,
-				4E9F0FD127397501007E1E23 /* ViewController.swift */,
-				4E9F0FD327397501007E1E23 /* Main.storyboard */,
 				4E9F0FD627397504007E1E23 /* Assets.xcassets */,
-				4E9F0FD827397504007E1E23 /* LaunchScreen.storyboard */,
 				4E9F0FDB27397504007E1E23 /* Info.plist */,
 			);
 			path = "BTC-USD";
@@ -127,6 +189,119 @@
 			path = "BTC-USDUITests";
 			sourceTree = "<group>";
 		};
+		4E9F0FFD2739765C007E1E23 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				4E9F1025273977B8007E1E23 /* Reachability */,
+				4E9F10142739776F007E1E23 /* WebSockets */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		4E9F0FFE27397667007E1E23 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4E9F103C27397854007E1E23 /* BtcUsdOrderBookVM.swift */,
+				4E9F103D27397855007E1E23 /* BtcUsdTickerVM.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		4E9F0FFF27397671007E1E23 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				4E9F1058273BDD89007E1E23 /* cells */,
+				4E9F104627397909007E1E23 /* BtcUsdVC.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		4E9F10002739767F007E1E23 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				4E9F1004273976CB007E1E23 /* OrderBook.swift */,
+				4E9F1002273976CA007E1E23 /* Ticker.swift */,
+				4E9F104E273ACEBB007E1E23 /* TickerResponse.swift */,
+				4E9F1050273ACF76007E1E23 /* OrderBookResponse.swift */,
+				4E9F1052273ACFA0007E1E23 /* OrderBookSnapshot.swift */,
+				4E9F1054273AE30F007E1E23 /* TickerRequest.swift */,
+				4E9F1056273AE602007E1E23 /* OrderRequest.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4E9F100127397686007E1E23 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				4E9F102A27397811007E1E23 /* Reachability.swift */,
+				4E9F103027397826007E1E23 /* ValuesFormatter.swift */,
+				4E9F1049273A37FD007E1E23 /* Constants.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		4E9F10142739776F007E1E23 /* WebSockets */ = {
+			isa = PBXGroup;
+			children = (
+				4E9F101727397786007E1E23 /* BtcUsdWebService.swift */,
+				4E9F101527397785007E1E23 /* WebSocketHandler.swift */,
+				4E9F101627397786007E1E23 /* WebSocketRequests.swift */,
+				4E9F101827397786007E1E23 /* WebSocketResponseDecoder.swift */,
+			);
+			path = WebSockets;
+			sourceTree = "<group>";
+		};
+		4E9F1025273977B8007E1E23 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				4E9F1026273977E4007E1E23 /* ReachabilityService.swift */,
+				4E9F1027273977E4007E1E23 /* ReachabilityServiceType.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		4E9F104827397A08007E1E23 /* user interface */ = {
+			isa = PBXGroup;
+			children = (
+				4E9F0FD327397501007E1E23 /* Main.storyboard */,
+				4E9F0FD827397504007E1E23 /* LaunchScreen.storyboard */,
+				4E9F1041273978C2007E1E23 /* OrderBookTableViewCell.xib */,
+				4E9F1040273978C2007E1E23 /* OrderBookHeaderView.xib */,
+			);
+			path = "user interface";
+			sourceTree = "<group>";
+		};
+		4E9F1058273BDD89007E1E23 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				4E9F1044273978D5007E1E23 /* OrderBookTableViewCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		60E54FF61A334C18F53CD1D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09AB417C4EEEA6FE352912DC /* Pods-BTC-USD.debug.xcconfig */,
+				37D9DD6BD04AD8A3605808BA /* Pods-BTC-USD.release.xcconfig */,
+				621420F511DF3210DED003CA /* Pods-BTC-USD-BTC-USDUITests.debug.xcconfig */,
+				0EAA2FF274ED0F01672DD6F6 /* Pods-BTC-USD-BTC-USDUITests.release.xcconfig */,
+				05E93EF5FA17617E6E1C34D2 /* Pods-BTC-USDTests.debug.xcconfig */,
+				4580B7A94902E818079344F3 /* Pods-BTC-USDTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9F680ADA49DFBA05B9D86CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A23C4874E1F2B1F268C3E666 /* Pods_BTC_USD.framework */,
+				153129BEC31E7F343C7AD57A /* Pods_BTC_USD_BTC_USDUITests.framework */,
+				A7503D5F7625652DC3539990 /* Pods_BTC_USDTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E9F0FF427397504007E1E23 /* Build configuration list for PBXNativeTarget "BTC-USD" */;
 			buildPhases = (
+				458D4D98C92DAD04BBDD319F /* [CP] Check Pods Manifest.lock */,
 				4E9F0FC627397501007E1E23 /* Sources */,
 				4E9F0FC727397501007E1E23 /* Frameworks */,
 				4E9F0FC827397501007E1E23 /* Resources */,
+				5FFDB27EDA889F65BADA3C0C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,9 +328,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E9F0FF727397504007E1E23 /* Build configuration list for PBXNativeTarget "BTC-USDTests" */;
 			buildPhases = (
+				E953396252789088F7079F81 /* [CP] Check Pods Manifest.lock */,
 				4E9F0FDC27397504007E1E23 /* Sources */,
 				4E9F0FDD27397504007E1E23 /* Frameworks */,
 				4E9F0FDE27397504007E1E23 /* Resources */,
+				5097F1663E9D0E4BB82FB232 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,9 +348,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E9F0FFA27397504007E1E23 /* Build configuration list for PBXNativeTarget "BTC-USDUITests" */;
 			buildPhases = (
+				E3D671941BA9B56849F703FB /* [CP] Check Pods Manifest.lock */,
 				4E9F0FE627397504007E1E23 /* Sources */,
 				4E9F0FE727397504007E1E23 /* Frameworks */,
 				4E9F0FE827397504007E1E23 /* Resources */,
+				764541864992780366854AC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,7 +388,7 @@
 				};
 			};
 			buildConfigurationList = 4E9F0FC527397501007E1E23 /* Build configuration list for PBXProject "BTC-USD" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -232,6 +413,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E9F0FDA27397504007E1E23 /* LaunchScreen.storyboard in Resources */,
+				4E9F1043273978C3007E1E23 /* OrderBookTableViewCell.xib in Resources */,
+				4E9F1042273978C3007E1E23 /* OrderBookHeaderView.xib in Resources */,
 				4E9F0FD727397504007E1E23 /* Assets.xcassets in Resources */,
 				4E9F0FD527397501007E1E23 /* Main.storyboard in Resources */,
 			);
@@ -253,14 +436,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		458D4D98C92DAD04BBDD319F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BTC-USD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5097F1663E9D0E4BB82FB232 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTC-USDTests/Pods-BTC-USDTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTC-USDTests/Pods-BTC-USDTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTC-USDTests/Pods-BTC-USDTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FFDB27EDA889F65BADA3C0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTC-USD/Pods-BTC-USD-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTC-USD/Pods-BTC-USD-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTC-USD/Pods-BTC-USD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		764541864992780366854AC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTC-USD-BTC-USDUITests/Pods-BTC-USD-BTC-USDUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTC-USD-BTC-USDUITests/Pods-BTC-USD-BTC-USDUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTC-USD-BTC-USDUITests/Pods-BTC-USD-BTC-USDUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3D671941BA9B56849F703FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BTC-USD-BTC-USDUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E953396252789088F7079F81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BTC-USDTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E9F0FC627397501007E1E23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E9F0FD227397501007E1E23 /* ViewController.swift in Sources */,
+				4E9F1007273976CB007E1E23 /* OrderBook.swift in Sources */,
+				4E9F1005273976CB007E1E23 /* Ticker.swift in Sources */,
+				4E9F103E27397855007E1E23 /* BtcUsdOrderBookVM.swift in Sources */,
 				4E9F0FCE27397501007E1E23 /* AppDelegate.swift in Sources */,
+				4E9F1055273AE30F007E1E23 /* TickerRequest.swift in Sources */,
+				4E9F101D27397787007E1E23 /* BtcUsdWebService.swift in Sources */,
+				4E9F101C27397787007E1E23 /* WebSocketRequests.swift in Sources */,
+				4E9F1045273978D5007E1E23 /* OrderBookTableViewCell.swift in Sources */,
+				4E9F101B27397787007E1E23 /* WebSocketHandler.swift in Sources */,
+				4E9F1057273AE602007E1E23 /* OrderRequest.swift in Sources */,
+				4E9F104F273ACEBB007E1E23 /* TickerResponse.swift in Sources */,
+				4E9F103F27397855007E1E23 /* BtcUsdTickerVM.swift in Sources */,
+				4E9F101E27397787007E1E23 /* WebSocketResponseDecoder.swift in Sources */,
+				4E9F103827397827007E1E23 /* ValuesFormatter.swift in Sources */,
+				4E9F104A273A37FD007E1E23 /* Constants.swift in Sources */,
+				4E9F1028273977E4007E1E23 /* ReachabilityService.swift in Sources */,
 				4E9F0FD027397501007E1E23 /* SceneDelegate.swift in Sources */,
+				4E9F1029273977E4007E1E23 /* ReachabilityServiceType.swift in Sources */,
+				4E9F1053273ACFA0007E1E23 /* OrderBookSnapshot.swift in Sources */,
+				4E9F102B27397811007E1E23 /* Reachability.swift in Sources */,
+				4E9F1051273ACF76007E1E23 /* OrderBookResponse.swift in Sources */,
+				4E9F104727397909007E1E23 /* BtcUsdVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +756,7 @@
 		};
 		4E9F0FF527397504007E1E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09AB417C4EEEA6FE352912DC /* Pods-BTC-USD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -445,8 +768,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +787,7 @@
 		};
 		4E9F0FF627397504007E1E23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37D9DD6BD04AD8A3605808BA /* Pods-BTC-USD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,8 +799,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,6 +818,7 @@
 		};
 		4E9F0FF827397504007E1E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05E93EF5FA17617E6E1C34D2 /* Pods-BTC-USDTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +844,7 @@
 		};
 		4E9F0FF927397504007E1E23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4580B7A94902E818079344F3 /* Pods-BTC-USDTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +870,7 @@
 		};
 		4E9F0FFB27397504007E1E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 621420F511DF3210DED003CA /* Pods-BTC-USD-BTC-USDUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +894,7 @@
 		};
 		4E9F0FFC27397504007E1E23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EAA2FF274ED0F01672DD6F6 /* Pods-BTC-USD-BTC-USDUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

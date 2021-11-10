@@ -1,11 +1,9 @@
 //
 //  ReachabilityServiceType.swift
-//  BTCTracker
+//  BTC-USD
 //
-//  Created by Florian Preknya on 9/5/19.
-//  Copyright © 2019 Florian Preknya. All rights reserved.
+//  Created by Noel Obaseki on 07/11/2021.
 //
-
 import Foundation
 import RxSwift
 

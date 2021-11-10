@@ -1,5 +1,5 @@
 //
-//  BtcUsdViewController.swift
+//  BtcUsdVC.swift
 //  BTC-USD
 //
 //  Created by Noel Obaseki on 07/11/2021.
@@ -38,8 +38,8 @@ class BtcUsdVC: UIViewController {
         createTable()
         bindTickerData()
         bindOrderBookData()
-        tickerVM.onViewDidLoad()
-        orderVM.onViewDidLoad()
+        tickerVM.onNext()
+        orderVM.onNext()
     }
     
     private func changeLabelColour() {

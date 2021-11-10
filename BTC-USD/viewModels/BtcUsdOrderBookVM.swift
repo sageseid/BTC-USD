@@ -1,5 +1,5 @@
 //
-//  BtcUsdOrderBookViewModel.swift
+//  BtcUsdOrderBookVM.swift
 //  BTC-USD
 //
 //  Created by Noel Obaseki on 07/11/2021.
@@ -11,7 +11,7 @@ import RxCocoa
 
 class BtcUsdOrderBookVM {
     
-    let viewDidLoad = PublishSubject<Void>()
+    let orderBookData = PublishSubject<Void>()
     private let isLoadingRelay = BehaviorRelay(value: false)
     
     let sells: Driver<[OrderBook.Item]>
@@ -19,20 +19,24 @@ class BtcUsdOrderBookVM {
     
     var isLoading: Driver<Bool> {
         let isLoadingRelay = self.isLoadingRelay
-        return viewDidLoad.flatMapLatest {
+        return orderBookData.flatMapLatest {
             isLoadingRelay
         }.asDriver(onErrorJustReturn: false)
+    }
+    
+    func onNext() {
+        orderBookData.onNext(())
     }
     
     init(){
         let isLoadingRelay = self.isLoadingRelay
         let emptyOrderBook = OrderBook(bids: [], asks: [])
-        let orderBook: Driver<OrderBook> = viewDidLoad
+        let orderBook: Driver<OrderBook> = orderBookData
             .do(onNext: { _ in
                 isLoadingRelay.accept(true)
             })
             .flatMapLatest { () -> Observable<OrderBook> in
-                return  WSAPIService.shared.orderBook() //service.orderBook()
+                return  BtcUsdWebService.shared.orderBook()
                     .do(onNext: { _ in
                         isLoadingRelay.accept(false)
                     })
@@ -42,10 +46,6 @@ class BtcUsdOrderBookVM {
             .asDriver(onErrorJustReturn: emptyOrderBook)
         self.sells = orderBook.map { $0.asks }
         self.buys = orderBook.map { $0.bids }
-    }
-    
-    func onViewDidLoad() {
-        viewDidLoad.onNext(())
     }
 }
 
