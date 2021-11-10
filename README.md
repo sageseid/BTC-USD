@@ -1,7 +1,6 @@
 ## BTC-USD
 
-##Goal
-Build an iOS app that displays a live BTC/USD order book from the Bitfinex API.
+an iOS app that displays a live BTC/USD order book from the Bitfinex API.
 
 ## Challenge description
 You will use the Bitfinex API to display different information on the screen. The top part should contain a summary of the BTCUSD pair (last price, volume, low, high, change), followed by the live order-book using a WebSocket. These information are available on the Bitfinex documentation at
