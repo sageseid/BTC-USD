@@ -10,7 +10,7 @@ import Foundation
 struct WebSocketRequests {
         
     static func orderBookRequest( ) -> String {
-        let orderData = OrderRequest(event: "subscribe", channel: "book", pair: "BTCUSD", prec: "P0", freq: "F0", length: 50)
+        let orderData = OrderRequest(event: "subscribe", channel: "book", pair: "BTCUSD", prec: "P0", freq: "F1", length: 50)
         let jsonEncoder = JSONEncoder()
         let orderJSONData = try! jsonEncoder.encode(orderData)
         return  String(data: orderJSONData, encoding: .utf8)!
