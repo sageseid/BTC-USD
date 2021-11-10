@@ -32,5 +32,6 @@ Use the attached screenshot as an example (ignore trades tab), but feel free to 
 
 
 ## Screenshots
-![image](https://user-images.githubusercontent.com/20171941/141124044-451c1fc0-5ee2-4a26-97bc-9b42675fc4fa.png)
-![image](https://user-images.githubusercontent.com/20171941/141124051-0e71c23b-cd08-40de-9897-98a4e1fd7640.png)
+<img width="300" alt="Screenshot 2021-11-09 at 08 59 19" src="https://user-images.githubusercontent.com/20171941/141124044-451c1fc0-5ee2-4a26-97bc-9b42675fc4fa.png">
+<img width="300" alt="Screenshot 2021-11-10 at 14 38 45" src="https://user-images.githubusercontent.com/20171941/141124051-0e71c23b-cd08-40de-9897-98a4e1fd7640.png">
+
