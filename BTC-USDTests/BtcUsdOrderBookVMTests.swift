@@ -1,14 +1,13 @@
 //
-//  BTC_USDTests.swift
+//  BtcUsdOrderBookVMTests.swift
 //  BTC-USDTests
 //
-//  Created by Noel Obaseki on 08/11/2021.
+//  Created by Noel Obaseki on 10/11/2021.
 //
 
 import XCTest
-@testable import BTC_USD
 
-class BTC_USDTests: XCTestCase {
+class BtcUsdOrderBookVMTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

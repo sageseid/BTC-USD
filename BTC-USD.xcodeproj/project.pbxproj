@@ -14,9 +14,6 @@
 		4E9F0FD527397501007E1E23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F0FD327397501007E1E23 /* Main.storyboard */; };
 		4E9F0FD727397504007E1E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F0FD627397504007E1E23 /* Assets.xcassets */; };
 		4E9F0FDA27397504007E1E23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F0FD827397504007E1E23 /* LaunchScreen.storyboard */; };
-		4E9F0FE527397504007E1E23 /* BTC_USDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F0FE427397504007E1E23 /* BTC_USDTests.swift */; };
-		4E9F0FEF27397504007E1E23 /* BTC_USDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F0FEE27397504007E1E23 /* BTC_USDUITests.swift */; };
-		4E9F0FF127397504007E1E23 /* BTC_USDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F0FF027397504007E1E23 /* BTC_USDUITestsLaunchTests.swift */; };
 		4E9F1005273976CB007E1E23 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1002273976CA007E1E23 /* Ticker.swift */; };
 		4E9F1007273976CB007E1E23 /* OrderBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1004273976CB007E1E23 /* OrderBook.swift */; };
 		4E9F101B27397787007E1E23 /* WebSocketHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F101527397785007E1E23 /* WebSocketHandler.swift */; };
@@ -38,6 +35,10 @@
 		4E9F1053273ACFA0007E1E23 /* OrderBookSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1052273ACFA0007E1E23 /* OrderBookSnapshot.swift */; };
 		4E9F1055273AE30F007E1E23 /* TickerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1054273AE30F007E1E23 /* TickerRequest.swift */; };
 		4E9F1057273AE602007E1E23 /* OrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1056273AE602007E1E23 /* OrderRequest.swift */; };
+		4E9F105B273BFCA4007E1E23 /* BtcUsdTickerVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F105A273BFCA4007E1E23 /* BtcUsdTickerVMTests.swift */; };
+		4E9F105D273BFCDD007E1E23 /* BtcUsdOrderBookVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F105C273BFCDD007E1E23 /* BtcUsdOrderBookVMTests.swift */; };
+		4E9F105F273BFCFC007E1E23 /* BTC_USDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F105E273BFCFC007E1E23 /* BTC_USDUITests.swift */; };
+		4E9F1061273BFD0F007E1E23 /* BTC_USDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F1060273BFD0F007E1E23 /* BTC_USDUITestsLaunchTests.swift */; };
 		BE11AC3B75F29B4DF216A538 /* Pods_BTC_USD_BTC_USDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153129BEC31E7F343C7AD57A /* Pods_BTC_USD_BTC_USDUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,10 +74,7 @@
 		4E9F0FD927397504007E1E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E9F0FDB27397504007E1E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E9F0FE027397504007E1E23 /* BTC-USDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BTC-USDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E9F0FE427397504007E1E23 /* BTC_USDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTC_USDTests.swift; sourceTree = "<group>"; };
 		4E9F0FEA27397504007E1E23 /* BTC-USDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BTC-USDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E9F0FEE27397504007E1E23 /* BTC_USDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTC_USDUITests.swift; sourceTree = "<group>"; };
-		4E9F0FF027397504007E1E23 /* BTC_USDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTC_USDUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4E9F1002273976CA007E1E23 /* Ticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		4E9F1004273976CB007E1E23 /* OrderBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBook.swift; sourceTree = "<group>"; };
 		4E9F101527397785007E1E23 /* WebSocketHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketHandler.swift; sourceTree = "<group>"; };
@@ -98,6 +96,10 @@
 		4E9F1052273ACFA0007E1E23 /* OrderBookSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookSnapshot.swift; sourceTree = "<group>"; };
 		4E9F1054273AE30F007E1E23 /* TickerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRequest.swift; sourceTree = "<group>"; };
 		4E9F1056273AE602007E1E23 /* OrderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRequest.swift; sourceTree = "<group>"; };
+		4E9F105A273BFCA4007E1E23 /* BtcUsdTickerVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtcUsdTickerVMTests.swift; sourceTree = "<group>"; };
+		4E9F105C273BFCDD007E1E23 /* BtcUsdOrderBookVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtcUsdOrderBookVMTests.swift; sourceTree = "<group>"; };
+		4E9F105E273BFCFC007E1E23 /* BTC_USDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTC_USDUITests.swift; sourceTree = "<group>"; };
+		4E9F1060273BFD0F007E1E23 /* BTC_USDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTC_USDUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		621420F511DF3210DED003CA /* Pods-BTC-USD-BTC-USDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC-USD-BTC-USDUITests.debug.xcconfig"; path = "Target Support Files/Pods-BTC-USD-BTC-USDUITests/Pods-BTC-USD-BTC-USDUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A23C4874E1F2B1F268C3E666 /* Pods_BTC_USD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTC_USD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7503D5F7625652DC3539990 /* Pods_BTC_USDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTC_USDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,7 +175,8 @@
 		4E9F0FE327397504007E1E23 /* BTC-USDTests */ = {
 			isa = PBXGroup;
 			children = (
-				4E9F0FE427397504007E1E23 /* BTC_USDTests.swift */,
+				4E9F105A273BFCA4007E1E23 /* BtcUsdTickerVMTests.swift */,
+				4E9F105C273BFCDD007E1E23 /* BtcUsdOrderBookVMTests.swift */,
 			);
 			path = "BTC-USDTests";
 			sourceTree = "<group>";
@@ -181,8 +184,8 @@
 		4E9F0FED27397504007E1E23 /* BTC-USDUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4E9F0FEE27397504007E1E23 /* BTC_USDUITests.swift */,
-				4E9F0FF027397504007E1E23 /* BTC_USDUITestsLaunchTests.swift */,
+				4E9F105E273BFCFC007E1E23 /* BTC_USDUITests.swift */,
+				4E9F1060273BFD0F007E1E23 /* BTC_USDUITestsLaunchTests.swift */,
 			);
 			path = "BTC-USDUITests";
 			sourceTree = "<group>";
@@ -376,10 +379,12 @@
 					};
 					4E9F0FDF27397504007E1E23 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 						TestTargetID = 4E9F0FC927397501007E1E23;
 					};
 					4E9F0FE927397504007E1E23 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 						TestTargetID = 4E9F0FC927397501007E1E23;
 					};
 				};
@@ -586,7 +591,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E9F0FE527397504007E1E23 /* BTC_USDTests.swift in Sources */,
+				4E9F105B273BFCA4007E1E23 /* BtcUsdTickerVMTests.swift in Sources */,
+				4E9F105D273BFCDD007E1E23 /* BtcUsdOrderBookVMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,8 +600,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E9F0FEF27397504007E1E23 /* BTC_USDUITests.swift in Sources */,
-				4E9F0FF127397504007E1E23 /* BTC_USDUITestsLaunchTests.swift in Sources */,
+				4E9F105F273BFCFC007E1E23 /* BTC_USDUITests.swift in Sources */,
+				4E9F1061273BFD0F007E1E23 /* BTC_USDUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,6 +824,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V7FHXQ47S9;
@@ -832,6 +839,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Odin.BTC-USDTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "BTC-USDTests/BTC-USDTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTC-USD.app/BTC-USD";
@@ -844,6 +853,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V7FHXQ47S9;
@@ -858,6 +868,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Odin.BTC-USDTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "BTC-USDTests/BTC-USDTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTC-USD.app/BTC-USD";
@@ -869,6 +880,7 @@
 			baseConfigurationReference = 621420F511DF3210DED003CA /* Pods-BTC-USD-BTC-USDUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V7FHXQ47S9;
@@ -882,6 +894,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Odin.BTC-USDUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "BTC-USD";
@@ -893,6 +906,7 @@
 			baseConfigurationReference = 0EAA2FF274ED0F01672DD6F6 /* Pods-BTC-USD-BTC-USDUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V7FHXQ47S9;
